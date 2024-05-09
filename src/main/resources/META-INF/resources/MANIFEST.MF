@@ -1,1 +1,1 @@
-Main-class: org.acme.getting.started.GreetingResource.class
+Main-Class: org.acme.getting.started.GreetingService.class
