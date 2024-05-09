@@ -1,5 +1,5 @@
 FROM registry.access.redhat.com/ubi8/openjdk-17:latest
 
-COPY target/getting-started.jar /opt
+COPY target/pipeline-demo.jar /opt
 
-CMD java -jar /opt/getting-started.jar
+CMD java -jar /opt/pipeline-demo.jar
