@@ -1,3 +1,5 @@
 FROM registry.access.redhat.com/ubi8/openjdk-17:latest
 
-CMD java -jar target/pipeline-demo.jar
+COPY target/pipeline-demo.jar /opt
+
+CMD java -jar /opt/pipeline-demo.jar
