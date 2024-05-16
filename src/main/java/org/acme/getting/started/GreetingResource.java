@@ -29,7 +29,7 @@ public class GreetingResource {
     @Produces(MediaType.TEXT_PLAIN)
     @Path("/error/{name}")
     public String generateError(String name) {
-        throws new Exception();
+        throw new Exception();
         return "Error " + name;
     }
     
