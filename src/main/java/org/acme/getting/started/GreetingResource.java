@@ -28,7 +28,7 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     @Path("/error/{name}")
-    public String generateError(String name) {
+    public String generateError(String name) throws Exception {
         throw new Exception();
         return "Error " + name;
     }
