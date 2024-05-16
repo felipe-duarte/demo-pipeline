@@ -30,7 +30,7 @@ public class GreetingResource {
     @Path("/error/{name}")
     public String generateError(String name) throws Exception {
         throw new Exception();
-        return "Error " + name;
+       
     }
     
 }
