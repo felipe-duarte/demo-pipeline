@@ -24,4 +24,13 @@ public class GreetingResource {
     public String hello() {
         return "hello devops";
     }
+
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("/error/{name}")
+    public String generateError(String name) {
+        throws new Exception();
+        return "Error " + name;
+    }
+    
 }
